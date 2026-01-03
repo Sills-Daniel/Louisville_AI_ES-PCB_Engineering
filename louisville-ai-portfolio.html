@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louisville AI, Embedded Systems & PCB Engineering</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-content h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-content p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: #e8eaf6;
+            color: #667eea;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .member-name {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .member-role {
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .member-bio {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Louisville AI, Embedded Systems & PCB Engineering</h1>
+        <p>Innovating at the intersection of artificial intelligence and hardware</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Louisville AI, Embedded Systems & PCB Engineering is a cutting-edge organization dedicated to developing innovative solutions in artificial intelligence, embedded systems, and printed circuit board design. Based in Louisville, Kentucky, we combine deep technical expertise with creative problem-solving to deliver exceptional results for our clients and partners.</p>
+            <p>Our team specializes in bringing ideas from concept to production, handling everything from initial design and prototyping to full-scale manufacturing and deployment.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Our Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">🤖</div>
+                    <div class="project-content">
+                        <h3>AI-Powered Vision System</h3>
+                        <p>Developed an edge-deployed computer vision system for real-time object detection and classification in industrial environments.</p>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Edge Computing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">⚡</div>
+                    <div class="project-content">
+                        <h3>IoT Sensor Network</h3>
+                        <p>Designed and manufactured custom PCBs for a distributed IoT sensor network with low-power wireless communication.</p>
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">PCB Design</span>
+                            <span class="tag">Wireless</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🔧</div>
+                    <div class="project-content">
+                        <h3>Embedded Control System</h3>
+                        <p>Created a high-precision embedded control system for automated manufacturing equipment with real-time processing capabilities.</p>
+                        <div class="project-tags">
+                            <span class="tag">Embedded C</span>
+                            <span class="tag">Real-Time</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🔬</div>
+                    <div class="project-content">
+                        <h3>Medical Device Prototype</h3>
+                        <p>Engineered a prototype medical monitoring device with advanced signal processing and wireless data transmission.</p>
+                        <div class="project-tags">
+                            <span class="tag">Medical Tech</span>
+                            <span class="tag">Signal Processing</span>
+                            <span class="tag">Bluetooth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🌐</div>
+                    <div class="project-content">
+                        <h3>Smart Home Hub</h3>
+                        <p>Built an AI-enhanced smart home hub integrating multiple protocols and providing intelligent automation and voice control.</p>
+                        <div class="project-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Smart Home</span>
+                            <span class="tag">Voice Control</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🚀</div>
+                    <div class="project-content">
+                        <h3>Aerospace Telemetry</h3>
+                        <p>Developed a ruggedized telemetry system for aerospace applications with redundant communication channels.</p>
+                        <div class="project-tags">
+                            <span class="tag">Aerospace</span>
+                            <span class="tag">Telemetry</span>
+                            <span class="tag">High Reliability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">JD</div>
+                    <h3 class="member-name">Dr. Jane Doe</h3>
+                    <p class="member-role">Lead AI Engineer</p>
+                    <p class="member-bio">Dr. Doe brings over 15 years of experience in machine learning and artificial intelligence. She holds a Ph.D. in Computer Science from MIT and has published numerous papers on neural network optimization. Jane leads our AI research initiatives and specializes in deploying ML models on resource-constrained embedded devices.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">MS</div>
+                    <h3 class="member-name">Michael Smith</h3>
+                    <p class="member-role">Senior Embedded Systems Engineer</p>
+                    <p class="member-bio">Michael is an expert in embedded systems design with a decade of experience in firmware development and hardware-software integration. He specializes in real-time operating systems, low-level programming, and optimizing code for performance-critical applications. Michael has successfully delivered projects across automotive, industrial, and consumer electronics sectors.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">SJ</div>
+                    <h3 class="member-name">Sarah Johnson</h3>
+                    <p class="member-role">PCB Design Specialist</p>
+                    <p class="member-bio">Sarah is a highly skilled PCB designer with expertise in high-speed digital design, RF circuits, and power electronics. With 12 years in the industry, she has designed boards for applications ranging from medical devices to aerospace systems. Sarah is known for her meticulous attention to signal integrity and her ability to optimize designs for manufacturability and cost.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Interested in working with us? Get in touch to discuss your project needs.</p>
+            <p><strong>Email:</strong> info@louisvilleai.com</p>
+            <p><strong>Phone:</strong> (502) 555-0123</p>
+            <p><strong>Address:</strong> 123 Innovation Drive, Louisville, KY 40202</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Louisville AI, Embedded Systems & PCB Engineering. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe project cards and team members
+        document.querySelectorAll('.project-card, .team-member').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
